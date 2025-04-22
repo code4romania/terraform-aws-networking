@@ -20,7 +20,9 @@ If you would like to suggest new functionality, open an Issue and mark it as a _
 
 ```hcl
 module "networking" {
-  # source = "./aws-networking"
+  source    = "code4romania/networking/aws"
+  version   = "0.1.0"
+  namespace = "project_name"
 }
 ```
 
