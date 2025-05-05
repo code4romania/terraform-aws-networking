@@ -18,6 +18,16 @@ output "private_subnet_ids" {
   value       = aws_subnet.private[*].id
 }
 
+output "public_cidr_blocks" {
+  description = "Public CIDR blocks."
+  value       = aws_subnet.public[*].cidr_block
+}
+
+output "private_cidr_blocks" {
+  description = "Private CIDR blocks."
+  value       = aws_subnet.private[*].cidr_block
+}
+
 output "public_availability_zones" {
   description = "Public Availability Zones."
   value       = aws_subnet.public[*].availability_zone
